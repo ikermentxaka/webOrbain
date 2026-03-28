@@ -1,0 +1,71 @@
+#fotosCarousel img{
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+*{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+h2{
+   font-weight: 700; 
+}
+.navbar {
+  position: relative;
+}
+.navbar-collapse {
+padding-inline: 3vw;
+  position: absolute;
+  top: 100%; /* justo debajo del navbar */
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.774); /* importante para que tape lo de debajo */
+  z-index: 2;
+}
+/*LLAVE TRAIDA DE BIGCARTEL*/
+#llave{
+z-index:3;
+position:absolute;
+ animation-name: keymov;
+animation-duration: 20s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+scale: 50%;
+filter: drop-shadow(0 0 1.05rem rgb(210 210 210));
+}
+@keyframes keymov {
+  0% {transform: translateX(-500px) rotate(0deg);}
+26%{transform: translate(600px,500px) rotate(90deg) scaleX(70%);}
+43%{transform: translate(600px,-600px);}
+70% {transform: translate(-500px,600px) rotate(260deg) scale(70%);}
+  100% {transform: translate(-500px,600px) scale(0);}
+}
+/*FOOTER TRAIDO DE BIGCARTEL*/
+
+
+
+
+
+
+footer{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+    position:absolute;
+    padding-bottom:0em;
+    background-color:rgb(17, 17, 17);
+    color:white;
+    width:100%;
+    
+    margin-top:8em;
+    padding-block:2vh;}
+
+    .afoot{
+    color:white;
+    text-decoration: none;
+}
