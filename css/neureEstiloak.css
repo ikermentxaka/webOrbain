@@ -9,8 +9,24 @@
   font-weight: 400;
   font-style: normal;
 }
+.thinfont{
+   font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+.boldfont{
+   font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
 h2{
    font-weight: 700; 
+}
+a{
+  text-decoration: none;
+  color: inherit;
 }
 .navbar {
   position: relative;
@@ -68,4 +84,11 @@ footer{
     .afoot{
     color:white;
     text-decoration: none;
+}
+
+footer img{
+  width: 5vw;
+}
+footer p{
+  font-size: 3vw;
 }
