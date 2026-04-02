@@ -21,6 +21,9 @@
   font-weight: 900;
   font-style: normal;
 }
+h1{
+  font-weight: 800;
+}
 h2{
    font-weight: 700; 
 }
@@ -36,8 +39,9 @@ padding-inline: 3vw;
   position: absolute;
   top: 100%; /* justo debajo del navbar */
   left: 0;
+  backdrop-filter: blur(7px);
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.774); /* importante para que tape lo de debajo */
+  background-color: rgba(255, 255, 255, 0.6); /* importante para que tape lo de debajo */
   z-index: 2;
 }
 /*LLAVE TRAIDA DE BIGCARTEL*/
@@ -60,7 +64,11 @@ filter: drop-shadow(0 0 1.05rem rgb(210 210 210));
 }
 /*FOOTER TRAIDO DE BIGCARTEL*/
 
-
+#card img{
+  height: 20px;
+  width: 20px;
+  
+}
 
 
 

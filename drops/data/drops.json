@@ -1,0 +1,16 @@
+{
+  "drops": [
+    {
+      "id": "drop1",
+      "title": "Drop 1",
+      "image": "/img/drop1.jpg",
+      "link": "dropModelo.html?drop=drop1"
+    },
+    {
+      "id": "dropzf",
+      "title": "Drop capsula por ZeroFuture",
+      "image": "/img/dropzf1.jpg",
+      "link": "dropModelo.html?drop=dropzf"
+    }
+  ]
+}
