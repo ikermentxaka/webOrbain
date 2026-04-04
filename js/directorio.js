@@ -12,9 +12,9 @@ fetch('/drops/data/drops.json')
 
 /*innerHtml establece el html de un elemento*/
       card.innerHTML = `
-        <div class="card" id="card">
+        <div class="card overflow-hidden" id="card">
           <img src="../drops/data/${drop.image}" />
-          <h2>${drop.title}</h2>
+          <h4 class="fs-6 px-2 pt-2">${drop.title}</h4>
         </div>
       `;
 /*El metodo appendChild inserta un elememto hijo al elemento seleccionado.

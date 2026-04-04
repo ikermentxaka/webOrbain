@@ -41,8 +41,9 @@ padding-inline: 3vw;
   left: 0;
   backdrop-filter: blur(7px);
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.6); /* importante para que tape lo de debajo */
+  background-color: rgba(221, 255, 253, 0.6); /* importante para que tape lo de debajo */
   z-index: 2;
+  border-radius: 0px 0px 20px 20px;
 }
 /*LLAVE TRAIDA DE BIGCARTEL*/
 #llave{
@@ -64,12 +65,24 @@ filter: drop-shadow(0 0 1.05rem rgb(210 210 210));
 }
 /*FOOTER TRAIDO DE BIGCARTEL*/
 
-#card img{
-  height: 20px;
-  width: 20px;
-  
+#drops-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
+#card img{
+  height: 30vw;
+  width: 100%;
+  
+  object-fit: cover;
+}
+#card{
+  transition: transform 0.5s;
+}
+#card:hover{
+  transform: scale(1.05);
+}
 
 
 
