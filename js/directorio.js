@@ -3,9 +3,9 @@
 fetch('/drops/data/drops.json')
 /*Esta es la estrctura básica en un fetch, habiendo un response y un data*/
   .then(res => res.json())
-  .then(data => {
+  .then(data => {/*Crea la referencia container al elemento html con ese id*/
     const container = document.getElementById('drops-container');
-
+//data.drops es un array
     data.drops.forEach(drop => {
       const card = document.createElement('a');
       card.href = drop.link;
