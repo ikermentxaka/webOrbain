@@ -35,8 +35,7 @@ header {
 }
 
 header h1 {
-  font-size: 1em;
-  
+
   font-weight: 600;
   
 }
@@ -53,8 +52,8 @@ header h1 {
 #threefoot{
   color: white;
   position: absolute;
-  bottom: 0;
-  padding: 20px;
+  bottom: 2em;
   
-  
+  height: 15vh;
+  justify-self: center;
 }

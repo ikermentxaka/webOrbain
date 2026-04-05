@@ -3,6 +3,12 @@ import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.m
 import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/controls/OrbitControls.js?module';
 
 import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/loaders/GLTFLoader.js?module';
+//Para las texturas de reflejo
+import { RGBELoader } from 'https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/loaders/RGBELoader.js?module';
+
+const rgbeLoader = new RGBELoader();
+
+
 
 //Create a Three.JS Scene
 const scene = new THREE.Scene();
@@ -17,13 +23,31 @@ let controls;
 
 //Set which object to render first
 let objToRender = 'dino';
+
+
+rgbeLoader.load('assets/hdr/1.hdr', function (texture) {
+  texture.mapping = THREE.EquirectangularReflectionMapping;
+
+  scene.environment = texture; // 👈 CLAVE (reflejos)
+  //scene.background = texture;  // opcional (ver fondo)
+});
+
+scene.environmentIntensity = 1.5;
 //Funcion para elegir que objeto renderizar
 document.getElementById('btnDino').addEventListener('click', () => {
   cambioPieza('dino');
 });
 
+document.getElementById('btnBode').addEventListener('click', () => {
+  cambioPieza('bodegon');
+});
+
 document.getElementById('btnEye').addEventListener('click', () => {
   cambioPieza('eye');
+});
+
+document.getElementById('btnPosca').addEventListener('click', () => {
+  cambioPieza('posca');
 });
 
 window.cambioPieza = function(nombre){
