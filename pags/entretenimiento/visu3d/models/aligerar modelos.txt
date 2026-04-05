@@ -1,0 +1,1 @@
+Para aligerar modelos en el exportado de blender: en Data>Mesh> dejar solo nos Normals

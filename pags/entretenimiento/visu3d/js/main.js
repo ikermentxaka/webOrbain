@@ -25,11 +25,11 @@ let controls;
 let objToRender = 'dino';
 
 
-rgbeLoader.load('assets/hdr/1.hdr', function (texture) {
+rgbeLoader.load('assets/hdr/4.hdr', function (texture) {
   texture.mapping = THREE.EquirectangularReflectionMapping;
 
   scene.environment = texture; // 👈 CLAVE (reflejos)
-  //scene.background = texture;  // opcional (ver fondo)
+  scene.background = texture;  // opcional (ver fondo)
 });
 
 scene.environmentIntensity = 1.5;
