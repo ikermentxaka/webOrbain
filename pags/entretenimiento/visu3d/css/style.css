@@ -1,19 +1,44 @@
+*{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.thinfont{
+   font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+.boldfont{
+   font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+
 body {
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+
   background-color: #000;
 }
 
 header {
-  margin-top: 3em;
+  justify-self: center;
+  position: absolute;
+  margin-top: 1em;
   text-align: center;
   color: white;
+  z-index: 9999;
   
 }
 
 header h1 {
-  font-size: 2em;
-  font-weight: 900;
+  font-size: 1em;
+  
+  font-weight: 600;
+  
 }
 
 #container3D canvas {
@@ -30,4 +55,6 @@ header h1 {
   position: absolute;
   bottom: 0;
   padding: 20px;
+  
+  
 }

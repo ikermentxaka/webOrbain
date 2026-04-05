@@ -7,6 +7,14 @@
   <head>
     <meta charset="utf-8" />
     <title>A simple Three.JS App</title>
+    <link rel="icon" href="https://assets.bigcartel.com/account_favicons/85266/favicon.png?auto=format&amp;fit=max&amp;h=32&amp;w=32" type="image/png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -15,14 +23,14 @@
     </header>
 
     <main>
-      <div id="container3D"></div>
+      <div id="container3D" ></div>
     </main>
 
-    <div id="threefoot" class="container p-2">
+    <div id="threefoot" class="container p-2 bg-light bg-opacity-10 m-2 rounded ">
       <p>Selecciona otro 3D</p>
         <div class="continer">
-          <a href="">Bodegon</a>
-          <a href="">Posca</a>
+          <button id="btnDino">Posca</button>
+          <button id="btnEye">Posca</button>
         </div>
       </div>
 
@@ -35,5 +43,7 @@
   }
 </script>
     <script type="module" src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
   </body>
 </html>

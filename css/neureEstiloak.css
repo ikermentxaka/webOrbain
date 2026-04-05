@@ -41,9 +41,12 @@ padding-inline: 3vw;
   left: 0;
   backdrop-filter: blur(7px);
   width: 100%;
-  background-color: rgba(221, 255, 253, 0.6); /* importante para que tape lo de debajo */
+  background-color: rgba(255, 255, 255, 0.6); /* importante para que tape lo de debajo */
   z-index: 2;
   border-radius: 0px 0px 20px 20px;
+  border-style: solid;
+  border-width: 0 0px 1px 0px;
+  border-color: rgb(197, 197, 197);
 }
 /*LLAVE TRAIDA DE BIGCARTEL*/
 #llave{
