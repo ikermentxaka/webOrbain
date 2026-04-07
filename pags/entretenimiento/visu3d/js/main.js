@@ -25,7 +25,7 @@ let controls;
 let objToRender = 'dino';
 
 
-rgbeLoader.load('assets/hdr/7.hdr', function (texture) {
+rgbeLoader.load('assets/hdr/8.hdr', function (texture) {
   texture.mapping = THREE.EquirectangularReflectionMapping;
 
   scene.environment = texture; // 👈 CLAVE (reflejos)
