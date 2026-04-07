@@ -50,10 +50,18 @@ header h1 {
 }
 
 #threefoot{
-  color: white;
+  
   position: absolute;
   bottom: 2em;
   
-  height: 15vh;
+  
   justify-self: center;
+}
+#3DminiCont{
+  
+}
+
+/* width */
+::-webkit-scrollbar {
+  display: none;
 }
