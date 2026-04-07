@@ -25,7 +25,7 @@ let controls;
 let objToRender = 'dino';
 
 
-rgbeLoader.load('assets/hdr/4.hdr', function (texture) {
+rgbeLoader.load('assets/hdr/7.hdr', function (texture) {
   texture.mapping = THREE.EquirectangularReflectionMapping;
 
   scene.environment = texture; // 👈 CLAVE (reflejos)
@@ -34,20 +34,22 @@ rgbeLoader.load('assets/hdr/4.hdr', function (texture) {
 
 scene.environmentIntensity = 1.5;
 //Funcion para elegir que objeto renderizar
-document.getElementById('btnDino').addEventListener('click', () => {
-  cambioPieza('dino');
-});
+
 
 document.getElementById('btnBode').addEventListener('click', () => {
   cambioPieza('bodegon');
 });
 
-document.getElementById('btnEye').addEventListener('click', () => {
-  cambioPieza('eye');
-});
-
 document.getElementById('btnPosca').addEventListener('click', () => {
   cambioPieza('posca');
+});
+
+document.getElementById('btnPañu').addEventListener('click', () => {
+  cambioPieza('pañuelo');
+});
+
+document.getElementById('btnRS').addEventListener('click', () => {
+  cambioPieza('rs');
 });
 
 window.cambioPieza = function(nombre){
