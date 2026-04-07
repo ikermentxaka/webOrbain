@@ -1,4 +1,5 @@
 /*//Este dibuja en el directorio*/
+
 /*fetch es una api para hacer peticiones http, aqui la usamos para obtener el json*/
 fetch('https://orbain.eus/pags/drops/data/drops.json')
 /*Esta es la estrctura básica en un fetch, habiendo un response y un data*/

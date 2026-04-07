@@ -11,6 +11,12 @@
       "title": "Drop capsula ZeroFuture",
       "image": "https://orbain.eus/pags/drops/data/img/dropzf1.jpg",
       "link": "dropModelo.html?drop=dropzf"
+    },
+    {
+      "id": "kirola",
+      "title": "Orbain Kirola",
+      "image": "https://orbain.eus/pags/drops/data/img/dropzf1.jpg",
+      "link": "dropModelo.html?drop=kirola"
     }
     
   ]
