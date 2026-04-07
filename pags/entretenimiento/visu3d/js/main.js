@@ -52,6 +52,10 @@ document.getElementById('btnRS').addEventListener('click', () => {
   cambioPieza('rs');
 });
 
+document.getElementById('btnHabbo').addEventListener('click', () => {
+  cambioPieza('habbo');
+});
+
 window.cambioPieza = function(nombre){
   objToRender = nombre;
   console.log(objToRender);
