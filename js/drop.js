@@ -1,7 +1,7 @@
 const params = new URLSearchParams(window.location.search);
 const dropId = params.get('drop');
 
-fetch(`/drops/data/${dropId}.json`)
+fetch(`https://orbain.eus/pags/drops/data/${dropId}.json`)
   .then(res => res.json())
   .then(data => {
     document.getElementById('title').textContent = data.title;

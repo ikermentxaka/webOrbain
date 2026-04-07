@@ -3,43 +3,43 @@
     {
       "id": "drop1",
       "title": "Drop 1",
-      "image": "/img/drop1.jpg",
+      "image": "./img/drop1.jpg",
       "link": "dropModelo.html?drop=drop1"
     },
     {
       "id": "dropzf",
       "title": "Drop capsula ZeroFuture",
-      "image": "/img/dropzf1.jpg",
+      "image": "./img/dropzf1.jpg",
       "link": "dropModelo.html?drop=dropzf"
     },
     {
       "id": "dropzf",
       "title": "Drop capsula ZeroFuture",
-      "image": "/img/dropzf1.jpg",
+      "image": "./img/dropzf1.jpg",
       "link": "dropModelo.html?drop=dropzf"
     },
     {
       "id": "dropzf",
       "title": "Drop capsula ZeroFuture",
-      "image": "/img/dropzf1.jpg",
+      "image": "./img/dropzf1.jpg",
       "link": "dropModelo.html?drop=dropzf"
     },
     {
       "id": "dropzf",
       "title": "Drop capsula ZeroFuture",
-      "image": "/img/dropzf1.jpg",
+      "image": "./img/dropzf1.jpg",
       "link": "dropModelo.html?drop=dropzf"
     },
     {
       "id": "dropzf",
       "title": "Drop capsula ZeroFuture",
-      "image": "/img/dropzf1.jpg",
+      "image": "./img/dropzf1.jpg",
       "link": "dropModelo.html?drop=dropzf"
     },
     {
       "id": "dropzf",
       "title": "Drop capsula ZeroFuture",
-      "image": "/img/dropzf1.jpg",
+      "image": "./img/dropzf1.jpg",
       "link": "dropModelo.html?drop=dropzf"
     }
   ]
