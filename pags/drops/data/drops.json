@@ -3,44 +3,15 @@
     {
       "id": "drop1",
       "title": "Drop 1",
-      "image": "./img/drop1.jpg",
+      "image": "https://orbain.eus/pags/drops/data/img/drop1.jpg",
       "link": "dropModelo.html?drop=drop1"
     },
     {
       "id": "dropzf",
       "title": "Drop capsula ZeroFuture",
-      "image": "./img/dropzf1.jpg",
-      "link": "dropModelo.html?drop=dropzf"
-    },
-    {
-      "id": "dropzf",
-      "title": "Drop capsula ZeroFuture",
-      "image": "./img/dropzf1.jpg",
-      "link": "dropModelo.html?drop=dropzf"
-    },
-    {
-      "id": "dropzf",
-      "title": "Drop capsula ZeroFuture",
-      "image": "./img/dropzf1.jpg",
-      "link": "dropModelo.html?drop=dropzf"
-    },
-    {
-      "id": "dropzf",
-      "title": "Drop capsula ZeroFuture",
-      "image": "./img/dropzf1.jpg",
-      "link": "dropModelo.html?drop=dropzf"
-    },
-    {
-      "id": "dropzf",
-      "title": "Drop capsula ZeroFuture",
-      "image": "./img/dropzf1.jpg",
-      "link": "dropModelo.html?drop=dropzf"
-    },
-    {
-      "id": "dropzf",
-      "title": "Drop capsula ZeroFuture",
-      "image": "./img/dropzf1.jpg",
+      "image": "https://orbain.eus/pags/drops/data/img/dropzf1.jpg",
       "link": "dropModelo.html?drop=dropzf"
     }
+    
   ]
 }
