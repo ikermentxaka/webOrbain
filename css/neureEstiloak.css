@@ -1,5 +1,5 @@
 #fotosCarousel img{
-    height: 400px;
+    height: 45vw;
     object-fit: cover;
     object-position: center;
 }
@@ -31,23 +31,18 @@ a{
   text-decoration: none;
   color: inherit;
 }
+nav{
+  display: flex;
+  justify-content: space-between;
+}
 .navbar {
   position: relative;
 }
 .navbar-collapse {
-padding-inline: 3vw;
-  position: absolute;
-  top: 100%; /* justo debajo del navbar */
-  left: 0;
-  backdrop-filter: blur(7px);
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.6); /* importante para que tape lo de debajo */
-  z-index: 2;
-  border-radius: 0px 0px 20px 20px;
-  border-style: solid;
-  border-width: 0 0px 1px 0px;
-  border-color: rgb(197, 197, 197);
+
+
 }
+
 /*LLAVE TRAIDA DE BIGCARTEL*/
 #llave{
 z-index:3;
@@ -103,7 +98,7 @@ footer{
     width:100%;
     
     margin-top:8em;
-    padding-block:2vh;}
+    padding-block:1vh;}
 
     .afoot{
     color:white;
@@ -113,13 +108,30 @@ footer{
 footer img{
   width: 5vw;
 }
-footer p{
-  font-size: 4vw;
-}
-footer a{
-  font-size: 4vw;
 
-}
+
 @media screen and (max-width: 736px){
-  
+  #fotosCarousel img{
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.navbar {
+  position: relative;
+}
+.navbar-collapse {
+padding-inline: 3vw;
+  position: absolute;
+  top: 100%; /* justo debajo del navbar */
+  left: 0;
+  backdrop-filter: blur(7px);
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.6); /* importante para que tape lo de debajo */
+  z-index: 2;
+  border-radius: 0px 0px 20px 20px;
+  border-style: solid;
+  border-width: 0 0px 1px 0px;
+  border-color: rgb(197, 197, 197);
+}
 }
