@@ -1,11 +1,6 @@
 {
   "drops": [
-    {
-      "id": "drop1",
-      "title": "Drop 1",
-      "image": "https://orbain.eus/pags/drops/data/img/drop1.jpg",
-      "link": "dropModelo.html?drop=drop1"
-    },
+   
     {
       "id": "dropzf",
       "title": "Drop capsula ZeroFuture",
