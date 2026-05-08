@@ -10,43 +10,43 @@
     {
       "id": "kirola",
       "title": "Orbain Kirola",
-      "image": "https://orbain.eus/pags/drops/data/img/dropzf1.jpg",
+      "image": "https://orbain.eus/pags/drops/data/img/dropKirola.jpg",
       "link": "dropModelo.html?drop=kirola"
     },
     {
       "id": "droprs",
       "title": "Drop RS",
-      "image": "https://orbain.eus/pags/drops/data/img/drop1.jpg",
+      "image": "https://orbain.eus/pags/drops/data/img/dropRs.jpg",
       "link": "dropModelo.html?drop=droprs"
     },
     {
       "id": "dropcaramelos",
       "title": "Drop Caramelos",
-      "image": "https://orbain.eus/pags/drops/data/img/drop1.jpg",
+      "image": "https://orbain.eus/pags/drops/data/img/dropCaramelos.jpg",
       "link": "dropModelo.html?drop=dropcaramelos"
     },
     {
       "id": "dropdados",
       "title": "Drop Dados",
-      "image": "https://orbain.eus/pags/drops/data/img/drop1.jpg",
+      "image": "https://orbain.eus/pags/drops/data/img/dropDados.jpg",
       "link": "dropModelo.html?drop=dropdados"
     },
     {
       "id": "dropbomba",
       "title": "Drop Bomba",
-      "image": "https://orbain.eus/pags/drops/data/img/drop1.jpg",
+      "image": "https://orbain.eus/pags/drops/data/img/dropBomba.jpg",
       "link": "dropModelo.html?drop=dropbomba"
     },
     {
       "id": "dropsp24",
       "title": "Drop SP24",
-      "image": "https://orbain.eus/pags/drops/data/img/drop1.jpg",
+      "image": "https://orbain.eus/pags/drops/data/img/dropSP24.jpg",
       "link": "dropModelo.html?drop=dropsp24"
     },
     {
       "id": "drophirugemz",
       "title": "Drop ft Hirugemzz",
-      "image": "https://orbain.eus/pags/drops/data/img/drop1.jpg",
+      "image": "https://orbain.eus/pags/drops/data/img/dropHirugemzz.jpg",
       "link": "dropModelo.html?drop=drophirugemz"
     }
     

@@ -13,7 +13,7 @@ fetch('https://orbain.eus/pags/drops/data/drops.json')
 
 /*innerHtml establece el html de un elemento*/
       card.innerHTML = `
-        <div class="card overflow-hidden" id="card">
+        <div class="card overflow-hidden" class="card" >
           <img src="${drop.image}" />
           <h4 class="fs-6 px-2 pt-2">${drop.title}</h4>
         </div>

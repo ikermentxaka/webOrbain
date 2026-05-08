@@ -61,27 +61,36 @@ filter: drop-shadow(0 0 1.05rem rgb(210 210 210));
 70% {transform: translate(-500px,600px) rotate(260deg) scale(70%);}
   100% {transform: translate(-500px,600px) scale(0);}
 }
-/*FOOTER TRAIDO DE BIGCARTEL*/
 
+/*TARJETAS DROPS*/
 #drops-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
-#card img{
+.card img{
   height: 30vw;
   width: 100%;
   
   object-fit: cover;
 }
-#card{
+.card{
   transition: transform 0.5s;
 }
-#card:hover{
+.card:hover{
   transform: scale(1.05);
 }
 
+@media screen and (min-width: 736px){
+  #drops-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;}
+  .card img{
+    height: 15vw;
+  }
+}
 
 
 footer{
