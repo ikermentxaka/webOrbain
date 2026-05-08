@@ -16,13 +16,13 @@
     {
       "id": "droprs",
       "title": "Drop RS",
-      "image": "https://orbain.eus/pags/drops/data/img/dropRs.jpg",
+      "image": "https://orbain.eus/pags/drops/data/img/dropRs.png",
       "link": "dropModelo.html?drop=droprs"
     },
     {
       "id": "dropcaramelos",
       "title": "Drop Caramelos",
-      "image": "https://orbain.eus/pags/drops/data/img/dropCaramelos.jpg",
+      "image": "https://orbain.eus/pags/drops/data/img/dropCaramelos.png",
       "link": "dropModelo.html?drop=dropcaramelos"
     },
     {
