@@ -18,7 +18,7 @@ fetch(`https://orbain.eus/pags/drops/data/${dropId}.json`)
       }
 
       item.innerHTML = `
-        <img src="${src}" class="d-block w-100" alt="imagen drop">
+        <img src="${src}" class="d-block w-100 object-fit-cover h-50" alt="imagen drop">
       `;
 
       carousel.appendChild(item);
