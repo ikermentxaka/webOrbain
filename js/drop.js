@@ -2,7 +2,7 @@ const params = new URLSearchParams(window.location.search);
 //Cogemos el valor drop (drop=kirola) de la url, y lo guardamos en dropId
 const dropId = params.get('drop');
 
-fetch(`https://orbain.eus/pags/drops/data/${dropId}.json`)
+fetch(`/pags/drops/data/${dropId}.json?v=${new Date().getTime()}`)
   .then(res => res.json())
   .then(data => {
     document.getElementById('title').textContent = data.title;

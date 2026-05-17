@@ -96,6 +96,9 @@ filter: drop-shadow(0 0 1.05rem rgb(210 210 210));
   }
 }
 
+#description{
+  white-space: pre-line;
+}
 
 footer{
     text-align: center;

@@ -26,5 +26,24 @@ export default defineConfig({
         ...getPages() // Todas las de la carpeta /pags
       }
     }
-  }
+  },
+  server: {
+    watch: {
+      // Fuerza a Vite a vigilar la carpeta public o archivos JSON específicos
+      usePolling: true, // Útil si estás en entornos virtuales o Docker, si no, puedes quitarlo
+      ignored: ['!**/pags/**', '!**/public/**', '!**/*.json']
+    }
+  },
+  plugins: [
+    // Este mini-plugin casero fuerza un refresco completo si cambia un JSON
+    {
+      name: 'watch-json-plugin',
+      handleHotUpdate({ file, server }) {
+        if (file.endsWith('.json')) {
+          console.log(`[json-update] Archivo modificado: ${file}`);
+          server.ws.send({
+            type: 'full-reload',
+            path: '*'
+          });
+        }}}]
 })
