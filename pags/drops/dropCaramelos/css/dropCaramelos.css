@@ -1,0 +1,10 @@
+
+
+
+
+#container3D {
+  width: 100%;       /* O el ancho que quieras en tu layout */
+  height: 500px;     /* O una altura fija para que contenga el visualizador */
+  position: relative; 
+  background-color: #f0f0f0; /* Opcional: para que veas dónde se corta el div mientras pruebas */
+}
