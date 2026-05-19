@@ -10,7 +10,7 @@ fetch('https://orbain.eus/pags/drops/data/drops.json')
     data.drops.forEach(drop => {
       const card = document.createElement('a');
       card.href = drop.link;
-
+        
 /*innerHtml establece el html de un elemento*/
       card.innerHTML = `
         <div class="card overflow-hidden" class="card" >

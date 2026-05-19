@@ -36,52 +36,9 @@ rgbeLoader.load('assets/hdr/4.hdr', function (texture) {
   scene.background = texture;  
 });
 
-scene.environmentIntensity = 1.5;
-
-
-window.cambioPieza = function(nombre){
-  objToRender = nombre;
-  console.log(objToRender);
-  loadModel(nombre);
-}
-
-function loadModel(nombre) {
-  if (object) {
-    scene.remove(object);
-  }
-
-  loader.load(
-    `./models/${nombre}/scene.gltf`,
-    function (gltf) {
-      object = gltf.scene;
-      scene.add(object);
-    },
-    function (xhr) {
-      console.log((xhr.loaded / xhr.total * 100) + '% loaded');
-    },
-    function (error) {
-      console.error(error);
-    }
-  );
-}
 
 //Instantiate a loader for the .gltf file
 const loader = new GLTFLoader();
-
-//Load the file
-loader.load(
-  `./models/${objToRender}/bp.gltf`,
-  function (gltf) {
-    object = gltf.scene;
-    scene.add(object);
-  },
-  function (xhr) {
-    console.log((xhr.loaded / xhr.total * 100) + '% loaded');
-  },
-  function (error) {
-    console.error(error);
-  }
-);
 
 //Instantiate a new renderer and set its size
 const renderer = new THREE.WebGLRenderer({ alpha: true }); 
@@ -92,32 +49,20 @@ renderer.setSize(widthInicial, heightInicial);
 //Add the renderer to the DOM
 contenedor.appendChild(renderer.domElement);
 
+//IMPORTANTE!! NO BORRAR
 //Set how far the camera will be from the 3D model
 camera.position.z = objToRender === "eye" ? 400 : 500;
-camera.position.z = objToRender === "dino" ? 3 : 500;
-
-//Add lights to the scene
-const topLight = new THREE.DirectionalLight(0xffffff, 1); 
-topLight.position.set(500, 500, 500);
-topLight.castShadow = true;
-scene.add(topLight);
-
-const otherLight = new THREE.DirectionalLight(0xffffff, 1); 
-otherLight.position.set(200, 500, 100);
-otherLight.castShadow = true;
-scene.add(otherLight);
-
-const bottomLight = new THREE.DirectionalLight(0xffffff, 0.2); 
-bottomLight.position.set(200, -500, 100);
-bottomLight.castShadow = true;
-scene.add(bottomLight);
-
-const ambientLight = new THREE.AmbientLight(0x333333, objToRender === "eye" ? 20 : 7);
-scene.add(ambientLight);
 
 //This adds controls to the camera
 controls = new OrbitControls(camera, renderer.domElement);
-  
+
+controls.rotateSpeed = -1; // invierte ambos
+
+// RESPUESTA TACTIL
+controls.addEventListener('change', () => {
+  controls.getAzimuthalAngle = () => -controls.getAzimuthalAngle();
+});
+
 //Render the scene
 function animate() {
   requestAnimationFrame(animate);
