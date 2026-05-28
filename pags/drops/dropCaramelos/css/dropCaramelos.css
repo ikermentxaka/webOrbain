@@ -1,10 +1,47 @@
 
 
 
-
+.container3D{
+  position: relative;
+}
+a{
+  text-decoration: underline;
+  
+}
+#gmapsTop{
+  margin: 0;
+  left: 0;
+  top: 0;
+  padding: 0;
+  width: 100vw;
+  position: absolute;
+  z-index: 100;
+  pointer-events: none;
+}
 #container3D {
+  top: 0;
   width: 100%;       /* O el ancho que quieras en tu layout */
   height: 500px;     /* O una altura fija para que contenga el visualizador */
   position: relative; 
   background-color: #f0f0f0; /* Opcional: para que veas dónde se corta el div mientras pruebas */
+  z-index: 2;
+  display: block;
+}
+
+#gmaps{
+  
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  position: absolute;
+  z-index: 99;
+  pointer-events: none;
+}
+@media screen and (min-width:700px) {
+  #gmaps{
+    display: none;
+  }
+  #gmapsTop{
+    display: none;
+  }
 }
