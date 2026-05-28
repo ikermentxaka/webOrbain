@@ -30,11 +30,38 @@ let controls;
 //Set which object to render first
 let objToRender = 'dino';
 
-rgbeLoader.load('assets/hdr/4.hdr', function (texture) {
+rgbeLoader.load('assets/hdr/ubiAbando.hdr', function (texture) {
   texture.mapping = THREE.EquirectangularReflectionMapping;
   scene.environment = texture; 
   scene.background = texture;  
 });
+
+
+/////CAMBIAR EL 360 DE UNO A OTRO
+document.getElementById('ubiAbando').addEventListener('click', () => {
+  rgbeLoader.load('assets/hdr/ubiAbando.hdr', function (texture) {
+  texture.mapping = THREE.EquirectangularReflectionMapping;
+  scene.environment = texture; 
+  scene.background = texture;  
+});
+});
+document.getElementById('ubiMoyua').addEventListener('click', () => {
+  rgbeLoader.load('assets/hdr/ubiMoyua.hdr', function (texture) {
+  texture.mapping = THREE.EquirectangularReflectionMapping;
+  scene.environment = texture; 
+  scene.background = texture;  
+});
+});
+document.getElementById('ubiPortu').addEventListener('click', () => {
+  rgbeLoader.load('assets/hdr/ubiPortu.hdr', function (texture) {
+  texture.mapping = THREE.EquirectangularReflectionMapping;
+  scene.environment = texture; 
+  scene.background = texture;  
+});
+});
+
+
+///////////////
 
 
 //Instantiate a loader for the .gltf file
