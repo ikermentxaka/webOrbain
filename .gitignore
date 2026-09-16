@@ -1,0 +1,6 @@
+# deps + build
+node_modules/
+dist/
+
+# documentación local para IA, no publicar (toda la carpeta)
+documentación/
