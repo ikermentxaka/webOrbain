@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // Layout optimizado para pantallas pequeñas
   container.innerHTML = `
-    <div class="p-3 shadow-sm bg-dark text-white rounded border border-secondary">
-      <div class="row g-2 mb-3">
+    <div class="py-3  shadow-sm bg-dark text-white rounded border border-secondary">
+      <div class="row g-2 px-5 mt-4 mb-3">
         <div class="col-12 col-sm-6">
           <label class="form-label fw-bold small">1. Selecciona Prenda:</label>
           <select id="prenda-select" class="form-select form-select-sm bg-dark text-white border-secondary">
@@ -43,11 +43,11 @@ document.addEventListener('DOMContentLoaded', async () => {
       </div>
 
       <!-- Contenedor con límites de dimensiones garantizados -->
-      <div id="canvas-container" class="d-flex justify-content-center align-items-center bg-black rounded p-1 overflow-hidden position-relative w-100">
+      <div id="canvas-container" style="background-color:rgb(146, 146, 146);" class="d-flex justify-content-center align-items-center  rounded p-1 overflow-hidden position-relative w-100">
         <canvas id="canvas-mockup"></canvas>
       </div>
 
-      <div class="d-flex flex-column  justify-content-between align-items-center mt-3 gap-2">
+      <div class="d-flex flex-column px-4  justify-content-between align-items-center mt-3 gap-2">
         <small class="text-secondary text-center text-sm-start small">Toca un diseño para moverlo, escalarlo o rotarlo.</small>
         <div class="d-flex gap-2 w-100 w-sm-auto justify-content-center">
           <button id="btn-delete" class="btn btn-outline-danger btn-sm flex-fill flex-sm-grow-0">Eliminar</button>
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const initialWidth = getCanvasWidth();
   const canvas = new fabric.Canvas('canvas-mockup', {
     width: initialWidth,
-    height: initialWidth * 1.2,
+    height: initialWidth * 0.9,
     preserveObjectStacking: true
   });
 
