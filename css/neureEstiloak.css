@@ -1,3 +1,11 @@
+body{
+  overflow-x:hidden; 
+  max-width:100%;
+  background-image: url("/assets/background.png");
+  
+}
+
+
 #btnHome{
   transition: transform 0.5s;
 }
@@ -46,25 +54,6 @@ nav{
   position: relative;
 }
 
-
-/*LLAVE TRAIDA DE BIGCARTEL*/
-#llave{
-z-index:3;
-position:absolute;
- animation-name: keymov;
-animation-duration: 20s;
-animation-timing-function: linear;
-animation-iteration-count: infinite;
-scale: 50%;
-filter: drop-shadow(0 0 1.05rem rgb(210 210 210));
-}
-@keyframes keymov {
-  0% {transform: translateX(-500px) rotate(0deg);}
-26%{transform: translate(600px,500px) rotate(90deg) scaleX(70%);}
-43%{transform: translate(600px,-600px);}
-70% {transform: translate(-500px,600px) rotate(260deg) scale(70%);}
-  100% {transform: translate(-500px,600px) scale(0);}
-}
 
 /*TARJETAS DROPS*/
 #drops-container {
@@ -126,6 +115,27 @@ footer img{
 }
 
 
+/*Llave flotando*/
+#llave{
+z-index:999;
+position:fixed;
+top:50%;left:50%;
+width:clamp(250px, 10vw, 90px);
+height:auto;
+transform:translate(-50%, -50%);
+ animation-name: keymov;
+ animation-duration: 30s;
+ animation-timing-function: ease-in-out;
+ animation-iteration-count: infinite;
+ filter: drop-shadow(0 0 1.05rem rgb(210 210 210));
+}
+@keyframes keymov {
+  0%,100% { transform: translate(-50%, -50%) translate(-70vw,0vh) rotate(0deg) scale(1); }
+  25% { transform: translate(-50%, -50%) translate(70vw,-40vh) rotate(180deg) scale(0.9); }
+  50% { transform: translate(-50%, -50%) translate(-70vw,70vh) rotate(360deg) scale(1); }
+  75% { transform: translate(-50%, -50%) translate(70vw,16vh) rotate(540deg) scale(0.9); }
+}
+
 @media screen and (max-width: 736px){
   #fotosCarousel img{
     height: 400px;
@@ -139,11 +149,11 @@ footer img{
 .navbar-collapse {
 padding-inline: 3vw;
   position: absolute;
-  top: 100%; /* justo debajo del navbar */
+  top: 100%;
   left: 0;
   backdrop-filter: blur(7px);
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.6); /* importante para que tape lo de debajo */
+  background-color: rgba(255, 255, 255, 0.6);
   z-index: 2;
   border-radius: 0px 0px 20px 20px;
   border-style: solid;
