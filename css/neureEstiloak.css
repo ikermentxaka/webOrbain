@@ -136,11 +136,11 @@ transform:translate(-50%, -50%);
  filter: drop-shadow(0 0 1.05rem rgb(210 210 210));
 }
 @keyframes keymov {
-  0%,100% { transform: translate(-50%, -50%) translate(-75vw,0vh) rotate(0deg) scale(1); }
-  26% { transform: translate(-50%, -50%) translate(75vw,40vh) rotate(180deg) scale(0.9); }
-  43% { transform: translate(-50%, -50%) translate(75vw,-40vh) rotate(360deg) scale(1); }
-  70% { transform: translate(-50%, -50%) translate(-75vw,40vh) rotate(540deg) scale(0.9); }
-  100% { transform: translate(-50%, -50%) translate(-75vw,40vh) rotate(540deg) scale(0); }
+  0%,100% { transform: translate(-50%, -50%) translate(-85vw,0vh) rotate(0deg) scale(1); }
+  26% { transform: translate(-50%, -50%) translate(85vw,40vh) rotate(180deg) scale(0.9); }
+  43% { transform: translate(-50%, -50%) translate(85vw,-40vh) rotate(360deg) scale(1); }
+  70% { transform: translate(-50%, -50%) translate(-85vw,40vh) rotate(540deg) scale(0.9); }
+  100% { transform: translate(-50%, -50%) translate(-85vw,40vh) rotate(540deg) scale(0); }
 }
 
 @media screen and (max-width: 736px){
