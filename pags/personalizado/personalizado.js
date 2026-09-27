@@ -32,18 +32,17 @@ document.addEventListener('DOMContentLoaded', async () => {
           <select id="prenda-select" class="form-select form-select-sm bg-dark text-white border-secondary">
             <option value="camiseta-blanca">Camiseta Blanca</option>
             <option value="camiseta-negra">Camiseta Negra</option>
-            <option value="sudadera-blanca">Sudadera Blanca</option>
-            <option value="sudadera-negra">Sudadera Negra</option>
+            
           </select>
         </div>
         <div class="col-12 col-sm-6">
-          <label class="form-label fw-bold small">2. Subir Diseños:</label>
+          <label class="form-label fw-bold small">2. Diseños (posibilidad de subir varios):</label>
           <input type="file" id="design-input" class="form-control form-control-sm bg-dark text-white border-secondary" accept="image/*" multiple>
         </div>
       </div>
 
       <!-- Contenedor con límites de dimensiones garantizados -->
-      <div id="canvas-container" style="background-color:rgb(146, 146, 146);" class="d-flex justify-content-center align-items-center  rounded p-1 overflow-hidden position-relative w-100">
+      <div id="canvas-container" style="background-color:rgb(146, 146, 146);" class="d-flex justify-content-center align-items-center  p-1 overflow-hidden position-relative w-100">
         <canvas id="canvas-mockup"></canvas>
       </div>
 

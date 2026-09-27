@@ -1,0 +1,18 @@
+{
+  "prendas": {
+    "orbain": 7,
+    "normal": 4
+  },
+  "estampacion": {
+    "pequena": 5,
+    "grande": 8
+  },
+  "urgencia": {
+    "sin": 1,
+    "con": 1.5
+  },
+  "diasEntrega": {
+    "sin": 15,
+    "con": 5
+  }
+}

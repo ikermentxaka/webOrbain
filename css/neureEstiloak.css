@@ -170,3 +170,62 @@ padding-inline: 3vw;
   border-color: rgb(197, 197, 197);
 }
 }
+
+/*CALCULADORA DE PRESUPUESTO*/
+.calculadora-card{
+  background-color: rgba(169, 169, 169, 0.43);
+  backdrop-filter: blur(2px);
+  border-radius: 24px;
+  padding: clamp(20px, 5vw, 42px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+}
+
+#calculador-presupuesto hr{
+  border-top: 1px solid #ffffff;
+  opacity: 1;
+  margin: 1.5rem 0;
+}
+
+.calculadora-titulo{
+  font-size: clamp(1.6rem, 5vw, 2.1rem);
+  font-weight: 900;
+  margin-bottom: 1.4rem;
+}
+
+.calculadora-card label{
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 0.4rem;
+}
+
+.calculadora-card .form-select{
+  width: 100%;
+  background-color: white;
+  border: 1px solid #e2e2e2;
+  border-radius: 999px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.10);
+  padding: 0.5rem 2.1rem 0.5rem 1.1rem;
+  font-size: 0.95rem;
+}
+
+.calculadora-card .form-select:focus{
+  border-color: #adb5bd;
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.08);
+}
+
+.calculadora-card hr{
+  border-top: 1px solid #d6d6d6;
+  opacity: 1;
+  margin: 1.5rem 0;
+}
+
+.calculadora-total h2{
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+.calculadora-total p{
+  font-size: 1rem;
+  margin-bottom: 0;
+}

@@ -1,0 +1,35 @@
+<script>
+async function trackVisitor() {
+// 1. Obtener la IP del visitante
+    let ip;
+    try {
+// Usamos ipify.org para obtener la IP pública del cliente
+        const ipResponse = await fetch('https://api.ipify.org?format=json');
+        const ipData = await ipResponse.json();
+        ip = ipData.ip;
+    } catch (error) {
+        console.error("Error al obtener la IP:", error);
+        return;
+    }
+    const trackingData = {
+        ip: ip,
+        userAgent: navigator.userAgent,
+        page: window.location.href
+    };
+    const params = new URLSearchParams(trackingData).toString();
+    const GAS_WEB_APP_URL = "https://script.google.com/macros/s/AKfycby0aBTjUGjBWVwt6OV6mUVjEaz4uWtltcAapEWfLXpOejmfcEtXUnR_o0NjIIH_1lNr2w/exec"; 
+    const finalUrl = `${GAS_WEB_APP_URL}?${params}`;
+
+    try {
+        await fetch(finalUrl, {
+            method: 'GET',
+            mode: 'no-cors'
+        });
+        console.log("Datos de seguimiento enviados con éxito vía GET.");
+    } catch (error) {
+
+        console.error("Error al enviar los datos al GAS:", error); 
+    }
+}
+trackVisitor();
+</script>
