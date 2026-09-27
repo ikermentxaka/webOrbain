@@ -1,5 +1,5 @@
 (function () {
-  var GAS_URL = 'https://script.google.com/macros/s/AKfycbzHPLXccb9I2bJ_B9FMgpQgBIdNe_dQw9_aUtoxKGU9WZ43AvznTLK78wlAvg_rpcon_g/exec';
+  var GAS_URL = 'https://script.google.com/macros/s/AKfycbzRdef1U0Gn3edhvKlI7jK8jEvRIrewkf-qRhVYQ7UZulYYVnBu1H86KpBz9Yl0ZH2Xdw/exec';
   var COOKIE_DAYS = 365;
 
   function setCookie(name, value, days) {
