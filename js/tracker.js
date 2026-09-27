@@ -6,7 +6,7 @@
     var d = new Date();
     d.setTime(d.getTime() + days * 24 * 60 * 60 * 1000);
     var expires = 'expires=' + d.toUTCString();
-    document.cookie = name + '=' + value + ';' + expires + ';path=/';
+    document.cookie = name + '=' + encodeURIComponent(value) + ';' + expires + ';path=/';
   }
 
   function getCookie(name) {
@@ -28,8 +28,18 @@
     });
   }
 
+  function buildParams(data) {
+    var parts = [];
+    for (var key in data) {
+      if (data.hasOwnProperty(key)) {
+        parts.push(encodeURIComponent(key) + '=' + encodeURIComponent(String(data[key])));
+      }
+    }
+    return parts.join('&');
+  }
+
   function sendToGAS(data) {
-    var params = new URLSearchParams(data).toString();
+    var params = buildParams(data);
     var url = GAS_URL + '?' + params;
     fetch(url, { method: 'GET', mode: 'no-cors' })
       .then(function () { console.log('Tracking data sent.'); })
@@ -39,13 +49,14 @@
   function trackEvent(eventType, detail) {
     var visitorId = getCookie('visitorId');
     if (!visitorId || getCookie('cookieConsent') !== 'accepted') return;
-    var params = new URLSearchParams({
+    var data = {
       visitorId: visitorId,
       eventType: eventType,
       detail: detail || '',
       page: window.location.href,
       timestamp: Date.now()
-    }).toString();
+    };
+    var params = buildParams(data);
     fetch(GAS_URL + '?' + params, { method: 'GET', mode: 'no-cors' })
       .catch(function () {});
   }
@@ -84,7 +95,8 @@
       screenRes: screen.width + 'x' + screen.height,
       language: navigator.language || '',
       colorDepth: screen.colorDepth || '',
-      eventType: firstVisit ? 'first_visit' : 'return_visit'
+      eventType: firstVisit ? 'first_visit' : 'return_visit',
+      detail: ''
     };
 
     fetch('https://api.ipify.org?format=json')
