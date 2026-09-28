@@ -34,6 +34,7 @@
 
     document.getElementById('cookie-accept-btn').addEventListener('click', function () {
       setCookie(COOKIE_NAME, 'accepted', COOKIE_DAYS);
+      document.dispatchEvent(new CustomEvent('orbain:consent'));
       banner.style.transition = 'opacity 0.5s';
       banner.style.opacity = '0';
       setTimeout(function () { banner.remove(); }, 500);
