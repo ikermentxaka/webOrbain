@@ -1,5 +1,5 @@
 (function () {
-  var GAS_URL = 'https://script.google.com/macros/s/AKfycbzRdef1U0Gn3edhvKlI7jK8jEvRIrewkf-qRhVYQ7UZulYYVnBu1H86KpBz9Yl0ZH2Xdw/exec';
+  var GAS_URL = 'https://script.google.com/macros/s/AKfycbRdef1U0Gn3edhvKlI7jK8jEvRIrewkf-qRhVYQ7UZulYYVnBu1H86KpBz9Yl0ZH2Xdw/exec';
   var COOKIE_DAYS = 365;
 
   function setCookie(name, value, days) {
@@ -62,7 +62,8 @@
   }
 
   function init() {
-    if (getCookie('cookieConsent') !== 'accepted') return;
+    if (init.done || getCookie('cookieConsent') !== 'accepted') return;
+    init.done = true;
 
     var visitorId = getCookie('visitorId');
     var visitCount = parseInt(getCookie('visitCount') || '0', 10);
@@ -113,10 +114,15 @@
 
   window.orbainTrack = trackEvent;
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
+  // Si ya están aceptadas, inicializa. Si no, espera al evento de aceptación.
+  if (getCookie('cookieConsent') === 'accepted') {
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
   } else {
-    init();
+    document.addEventListener('orbain:consent', init);
   }
 
   document.addEventListener('click', function (e) {

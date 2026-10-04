@@ -28,7 +28,7 @@
         '<div style="flex:1 1 300px;min-width:250px;">' +
           '<p style="margin:0;font-size:14px;line-height:1.5;"><strong>Utilizamos cookies</strong> para analizar el tráfico y mejorar tu experiencia. Al hacer clic en "Aceptar", consientes su uso según nuestra <a href="#" style="color:#4fc3f7;">Política de Cookies</a>.</p>' +
         '</div>' +
-        '<button id="cookie-accept-btn" style="background:#4fc3f7;color:#1a1a1a;border:none;padding:10px 24px;border-radius:4px;cursor:pointer;font-weight:700;font-size:14px;white-space:nowrap;">Aceptar</button>' +
+        '<button id="cookie-accept-btn" style="background:var(--colorWeb);;color:#1a1a1a;border:none;padding:10px 24px;border-radius:4px;cursor:pointer;font-weight:700;font-size:14px;white-space:nowrap;">Aceptar</button>' +
       '</div>';
     document.body.appendChild(banner);
 

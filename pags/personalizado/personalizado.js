@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         <small class="text-secondary text-center text-sm-start small">Toca un diseño para moverlo, escalarlo o rotarlo.</small>
         <div class="d-flex gap-2 w-100 w-sm-auto justify-content-center">
           <button id="btn-delete" class="btn btn-outline-danger btn-sm flex-fill flex-sm-grow-0">Eliminar</button>
-          <button id="btn-clear" class="btn btn-danger btn-sm flex-fill flex-sm-grow-0">Limpiar Todo</button>
+          <button id="btn-clear" class="btn  bg-colorWeb btn-sm flex-fill flex-sm-grow-0">Limpiar Todo</button>
         </div>
       </div>
     </div>
