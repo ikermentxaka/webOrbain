@@ -162,8 +162,6 @@ transform:translate(-50%, -50%);
 #llave{
   animation-duration: 25s;
 }
-.navbar {
-}
 .navbar-collapse {
 padding-inline: 3vw;
   position: absolute;
@@ -256,10 +254,12 @@ padding-inline: 3vw;
 }
 
 #navbar.scrolled {
-  height: 50px;
-  min-height: 50px;
+  height: 40px;
+  min-height: 40px;
 }
-
+#btnHomeImg.scrolled {
+  transition: height 0.3s ease;
+}
 /* Altura completa + hover: solo en escritorio (navbar expandido) */
 @media screen and (min-width: 992px) {
   #navbar .container-fluid,
@@ -299,10 +299,10 @@ padding-inline: 3vw;
 }
 
 #btnHomeImg {
-  /*height: 36px;*/
+  width: 26vw;
   transition: height 0.3s ease;
 }
 
 #navbar.scrolled #btnHomeImg {
-  /* height: 40px; */
+   width: 40px; 
 }

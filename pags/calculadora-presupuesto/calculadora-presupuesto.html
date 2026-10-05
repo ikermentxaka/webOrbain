@@ -34,11 +34,7 @@
                 <option value="3">3</option>
                 <option value="4">4</option>
                 <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
+                <option value="6">6 o más</option>
               </select>
             </div>
             <div class="col-12 col-xl-6">
@@ -106,5 +102,12 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   <script type="module" src="/main.js"></script>
   <script type="module" src="/js/calculadorPresupuesto.js"></script>
+  <script> const mas = document.getElementById("cantidad"); 
+    mas.addEventListener("change", function() {
+      if (mas.value === "6") {
+        alert("Si quieres más de 6 prendas contacta con nosotros a través de instagram o correo electrónico para un presupuesto mas competitivo.");
+      }
+    });
+  </script>
 </body>
 </html>
