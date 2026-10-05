@@ -257,11 +257,9 @@ padding-inline: 3vw;
   height: 40px;
   min-height: 40px;
 }
-#btnHomeImg.scrolled {
-  transition: height 0.3s ease;
-}
+
 /* Altura completa + hover: solo en escritorio (navbar expandido) */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 736px) {
   #navbar .container-fluid,
   #navbar .navbar-collapse,
   #navbar .navbar-nav {
@@ -297,12 +295,21 @@ padding-inline: 3vw;
   align-items: center;
   height: 100%;
 }
+@media screen and (min-width: 736px) {
+  #btnHomeImg {
+  width: 9vw;
+  transition: height 0.3s ease;
 
+  #btnHomeImg.scrolled {
+    width: 7vw;
+  transition: height 0.3s ease;
+}
+}
+}
+@media screen and (max-width: 736px) {
 #btnHomeImg {
   width: 26vw;
   transition: height 0.3s ease;
 }
-
-#navbar.scrolled #btnHomeImg {
-   width: 40px; 
 }
+
